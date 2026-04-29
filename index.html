@@ -34,31 +34,31 @@
 <body>
 
   <h1>Hier Zahlen sie 81.00€ fe</h1>
-  <button class="custom-button" onclick="playSound()">Hier Zahlen💶</button>
+  <button class="custom-button" onclick="prüf()">Hier Zahlen💶</button>
 
 <div style="text-align: center;">
   <p>______, ich bin gay und negger:</p>
-  <select>
-    <option>Ja</option>
-    <option>Nein</option>
-    <option>Vielleicht</option>
-  </select>
+<select id="dropdown">
+  <option value="0" selected>Auswählen</option>
+  <option value="1">Ja</option>
+  <option value="1">Nein</option>
+  <option value="1">vielleicht</option>
+</select>
 </div>
 
-<input type="checkbox" id="box"> Ich stimme zu
-
-<button onclick="prüfen()">Weiter</button>
 
 <script>
-  function prüfen() {
-    const box = document.getElementById("box");
-    if (box.checked) {
-      // Checkbox ist angehakt → Funktion ausführen
-      playSound();
-    } else {
-      alert("Bitte erst die Checkbox ankreuzen!");
-    }
+function prüf(){
+  const drop = document.getElementById("dropdown");
+  console.log(drop.value); // "1" oder "0"
+
+  // Beispiel mit if:
+  if (drop.value === "1") {
+    playsound();
+  } else {
+    alert("bitte kreuze was an negger");
   }
+}
 </script>
   
 </body>
