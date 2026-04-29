@@ -36,5 +36,30 @@
   <h1>Hier Zahlen sie 81.00€ fe</h1>
   <button class="custom-button" onclick="playSound()">Hier Zahlen💶</button>
 
+<div style="text-align: center;">
+  <p>______, ich bin gay und negger:</p>
+  <select>
+    <option>Ja</option>
+    <option>Nein</option>
+    <option>Vielleicht</option>
+  </select>
+</div>
+
+<input type="checkbox" id="box"> Ich stimme zu
+
+<button onclick="prüfen()">Weiter</button>
+
+<script>
+  function prüfen() {
+    const box = document.getElementById("box");
+    if (box.checked) {
+      // Checkbox ist angehakt → Funktion ausführen
+      playSound();
+    } else {
+      alert("Bitte erst die Checkbox ankreuzen!");
+    }
+  }
+</script>
+  
 </body>
 </html>
